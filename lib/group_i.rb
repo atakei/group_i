@@ -1,54 +1,18 @@
 require "group_i/version"
 
-module GroupI
-  def fizzbuzz
-    return_values = Array.new
+  today = Date.today
+  #puts today.wday
 
-    self.each do |n|
-      unless.n.is_a?(Numeric)
-        return_values << n
-        next 
-      end
-
-      if n.fizzbuzz?
-        return_values << "FizzBuzz"
-      elsif n.buzz?
-        return_values << "Buzz"
-      elsif n.fizz?
-        return_values << "Fizz"
-      else
-        return_values << n
-      end
-    end
-
-    return return_values
+  if today.wday == 1 then
+    print "月"
+  elsif today.wday == 2 then
+    print "火"
+  elsif today.wday == 3 then
+    print "水"
+  elsif today.wday == 4 then
+    print "木"
+  else
+    print "その他の"
   end
-end  
 
-module FizzBuzzNumerlics
-
-    def fizz?
-      self % 3 == 0
-    end
-
-    def fizzbuzz?
-      self % 5 == 0
-    end
-
-    def fizzbuzz?
-      self % 15 == 0
-    end
- end
-
-
-class Range
-  include FizzBuzz
-end
-
-class Array
-  include FizzBuzz
-end
-
-class Numeric
-  include FizzBuzzNumerics
-end
+  print "曜日です/n"
