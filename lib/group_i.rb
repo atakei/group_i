@@ -1,5 +1,7 @@
 require "group_i/version"
 
 module GroupI
-  # Your code goes here...
+  def self.between(start, last)
+    holidays.between(start, last)
+  end
 end
