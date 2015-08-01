@@ -8,4 +8,10 @@ module GroupI
   def self.holiday?(date)
     holidays.holiday?(date)
   end
+
+  private
+
+  def self.holidays
+    @@_holidays ||= Holidays.new
+  end  
 end
