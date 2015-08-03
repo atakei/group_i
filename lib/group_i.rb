@@ -1,5 +1,8 @@
 require "group_i/version"
 require 'date'
+
+module GroupI
+
  today = Date.today
 	 # Your code goes here...
  n = today.wday
@@ -21,5 +24,7 @@ case n
 		puts '今日は日曜です。'
 	else 
 		puts 'その日はいないです。'
+end
+
 end	
 		
