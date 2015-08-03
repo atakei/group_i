@@ -1,18 +1,25 @@
 require "group_i/version"
-
-  today = Date.today
-  #puts today.wday
-
-  if today.wday == 1 then
-    print "月"
-  elsif today.wday == 2 then
-    print "火"
-  elsif today.wday == 3 then
-    print "水"
-  elsif today.wday == 4 then
-    print "木"
-  else
-    print "その他の"
-  end
-
-  print "曜日です/n"
+require 'date'
+ today = Date.today
+	 # Your code goes here...
+ n = today.wday
+ 
+case n
+	when 1 then 
+		puts '今日は月曜です。'
+	when 2 then
+		puts '今日は火曜です。'
+	when 3 then 
+		puts '今日は水曜です。'
+	when 4 then
+		puts '今日は木曜です。'
+	when 5 then 
+		puts '今日は金曜です。'
+	when 6 then 
+		puts '今日は土曜です。'
+	when 7 then 
+		puts '今日は日曜です。'
+	else 
+		puts 'その日はいないです。'
+end	
+		
