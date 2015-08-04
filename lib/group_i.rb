@@ -23,7 +23,7 @@ case n
 	when 7 then 
 		puts '今日は日曜です。'
 	else 
-		puts 'その日はいないです。'
+		puts '日付を正しく入力してください。'
 end
 
 end	
